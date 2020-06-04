@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="captch.css" />
+    <title>Capcha</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td><span id="input" oncopy="return false;"></span></td>
+        <!--капча-->
+      </tr>
+      <tr>
+        <td><input type="text" id="result" onchange="Answer()" /></td>
+        <!--поле для вводу-->
+      </tr>
+      <tr>
+        <td><input type="button" id="check" value="Я не робот!" /></td>
+        <!--кнопка-->
+      </tr>
+      <tr>
+        <td><p id="answer"></p></td>
+        <!--відповідь-->
+      </tr>
+    </table>
+    <script src="3_captcha.js"></script>
+    <!--скрипт-->
+  </body>
+</html>
